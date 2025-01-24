@@ -1,3 +1,4 @@
+
 <div class="m-auto w-1/2 mb-4">
     <h3 class="text-lg text-gray-200 mb-3">Create Article</h3>
     <form wire:submit="save">
@@ -73,8 +74,11 @@
         </div>
         <div class="mb-3">
             <button
-                class="text-gray-200 p-2 bg-indigo-700 hover:bg-indigo-900 rounded-sm"
+                class="text-gray-200 p-2 bg-blue-700 rounded-sm disabled:opacity-75 disabled:bg-blue-300"
                 type="submit"
+                wire:dirty.class="hover:bg-blue-900"
+                wire:dirty.remove.attr="disabled"
+                disabled
             >
                 Save
             </button>
