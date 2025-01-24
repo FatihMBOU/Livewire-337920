@@ -7,6 +7,7 @@
         >
             Create Article
         </a>
+        <livewire:published-count />
     </div>
 
     <table>
